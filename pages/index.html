@@ -1,0 +1,132 @@
+{% extends "templates/partials/base.html" %}
+{% block title %}{% parent %} - Homepage{% endblock %}
+
+{% block content %}
+  <div class='triangles'></div>
+  <div class='outer clearfix'>
+    <div class="px3 max-width-4 mx-auto">
+      <div class="clearfix">
+        <div class="col col-12 md-col-4 leaf-background px4 mt4">
+          <img class='logo-spin fit' src='static/images/logo.svg' />
+        </div>
+        <div class="col md-col-8"></div>
+      </div>
+      <div class="clearfix mt3 mb3">
+        <div class="col col-12 md-col-4">
+          <p>
+            Whether you like to drink it, smoke it, eat it, or rub it on your face—we’ve got everything you (or your lady friend!) need to experience your green with high style. Consider it your summer survival pack.
+          </p>
+        </div>
+        <div class="col col-12 md-col-8">
+          <form id="mailchimp-form" class='mt2 pad-me'>
+            <input type="email" placeholder='Enter Your Email to Win' />
+            <button type="submit">ENTER</button>
+          </form>
+          <p id='mailchimp-outlet' class='blue pad-me'>Enter by August 10, 2017 to be in the draw.</p>
+        </div>
+      </div>
+      <div class="clearfix mb1">
+        <div class="col col-12 mb2"><h6 class='prompt blue mt0 mb1'>The winner takes home:</h6></div>
+
+        <!-- Product -->
+        <a href='http://www.paperclippottery.com' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>Paperclip Pottery</h3>
+            <h5 class='mt0'>Wake & Bake Ceramic Mug & Pipe</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$120</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/paperclip.jpg' />
+        </a>
+
+        <!-- Product (LEVO) -->
+        <a href='https://www.levooil.com' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>LEVO</h3>
+            <h5 class='mt0'>Electronic Oil Infuser</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$199</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/levo.jpg' />
+        </a>
+
+        <!-- Product (Dame) -->
+        <a href='https://www.dameproducts.com' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>Dame Products</h3>
+            <h5 class='mt0'>Finger Vibrator</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$75</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/dame.jpg' />
+        </a>
+
+        <!-- Product -->
+        <a href='http://www.ascheindustries.com' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>ASCHE</h3>
+            <h5 class='mt0'>Green Kush Pouchette</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$185</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/asche.jpg' />
+        </a>
+
+        <!-- Product -->
+        <a href='http://www.bakingsupply.co' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>The Baking Supply Co</h3>
+            <h5 class='mt0'>Recipe Box, Iron on Patch & Custom Grinder</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$90</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/bsco.jpg' />
+        </a>
+
+        <!-- Product -->
+        <a href='http://www.vanderpop.com/' target='_blank' class="product col col-12 sm-col-6 md-col-4 mb3">
+          <div class='copy ml2'>
+            <h3 class='mb1'>Van der Pop</h3>
+            <h5 class='mt0'>Body Oil, Joint Card, Gold Poker & Stash Jars</h5>
+          </div>
+          <div class='flag ml2'>
+            <div class='flag-inner'>
+              <h4 class='m0'>Valued At</h4>
+              <h2 class='m0'>$120</h2>
+            </div>
+          </div>
+          <img class='fit' src='static/images/vdp.jpg' />
+        </a>
+
+      </div>
+    </div>
+
+    <div class='clearfix'>
+      <div class="col col-12 mb3 center">
+        <h3 class='autofocus blue underline pointer'>Enter Now to Win!</h3>
+        <p class='blue pad-me'>By entering the sweepstakes, I agree that I am over 18+. I also agree to receive email communication and special offers from the featured brands.</p>
+      </div>
+    </div>
+  </div>
+  <div class='triangles-down'></div>
+{% endblock %}

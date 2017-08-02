@@ -1,0 +1,232 @@
+:root {
+  --light-pink: #FFE6E6;
+  --dark-pink: #FF5454;
+  --blue: #001AFF;
+}
+.pointer { cursor: pointer; }
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: white ;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: white;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: white;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: white;
+}
+*{
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+p {
+  line-height: 33px;
+  letter-spacing: 0.5px;
+}
+.blue {
+  color: var(--blue);
+}
+body {
+  font-family: 'Neuzeit Grotesk', 'Questrial', sans-serif;
+}
+.logo-spin {
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 10000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+
+  -moz-animation-name: spin;
+  -moz-animation-duration: 10000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+
+  -ms-animation-name: spin;
+  -ms-animation-duration: 10000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+
+  animation-name: spin;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.triangles {
+  background: url(../images/triangle.svg);
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  height: 40px;
+  background-repeat: repeat-x;
+  background-position: 50% 100%;
+  margin-bottom: -1px;
+  background-size: 4%;
+}
+.triangles-down {
+  background: url(../images/triangle-down.svg);
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  height: 40px;
+  background-repeat: repeat-x;
+  background-position: 50% 0%;
+  background-size: 4%;
+}
+.outer {
+  border-left: 10px solid white;
+  border-right: 10px solid white;
+  background-color: var(--light-pink);
+}
+.leaf-background {
+  background: url(../images/leaf.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 22%;
+  text-align: center;
+}
+.product {
+  position: relative;
+  color: white;
+  transition: 120ms transform ease-in-out;
+}
+.product:hover {
+  transform: translateY(-6px);
+}
+.product .copy {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+h3, h2, h4, h5 {
+  letter-spacing: 1px;
+}
+@media (min-width: 40em) {
+  .product:nth-child(odd) {
+    padding-left: 2rem;
+  }
+  .product:nth-child(even) {
+    padding-right: 2rem;
+  }
+  .product:nth-child(odd) .copy {
+    left: 2rem;
+  }
+}
+@media (min-width: 52em) {
+  #mailchimp-form button {
+    position: absolute;
+    height: 100%;
+    width: 100px;
+  }
+  .product:nth-child(odd) {
+    padding-left: initial;
+  }
+  .product:nth-child(even) {
+    padding-right: initial;
+  }
+  .product:nth-child(even) {
+    padding-right: initial;
+  }
+  .product:nth-child(odd) .copy {
+    left: initial;
+  }
+  /* First */
+  .product:nth-child(3n+2) {
+    padding-right: 2.6rem;
+  }
+  /* Middle */
+  .product:nth-child(3n+3) {
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
+  }
+  .product:nth-child(3n+3) .copy {
+    left: 1.3rem;
+  }
+  /* Last */
+  .product:nth-child(3n+1) {
+    padding-left: 2.6rem;
+  }
+  .product:nth-child(3n+1) .copy {
+    left: 2.6rem;
+  }
+  .pad-me {
+    padding-left: 2rem;
+  }
+}
+#mailchimp-form {
+  position: relative;
+}
+#mailchimp-form input {
+  border-radius: 0;
+  outline: none;
+  width: 100%;
+  padding: 24px;
+  border: 0;
+  font-size: 1.2rem;
+  background-color: rgba(0, 26, 255, 0.24);
+  text-align: center;
+}
+#mailchimp-form button {
+  position: relative;
+  height: 70px;
+  width: 100%;
+
+  background-color: var(--blue);
+  color: white;
+  border:0;
+  outline: none;
+  right:0;
+  top:0;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+}
+.product .flag {
+  position: absolute;
+  bottom: 30px;
+  margin-left: -40px;
+  background-color: var(--dark-pink);
+  border-radius: 999px;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.prompt {
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+}
+.product .flag .flag-inner {
+
+}
+.product img {
+  border-bottom: 5px solid var(--blue);
+}
+
+@-ms-keyframes spin {
+  from {
+    -ms-transform: rotate(0deg);
+  } to {
+    -ms-transform: rotate(360deg);
+  }
+}
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg);
+  } to {
+    -moz-transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+  } to {
+    -webkit-transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(360deg);
+  }
+}
